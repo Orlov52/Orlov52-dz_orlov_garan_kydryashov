@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+header {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/4cJLsb4vhUzNcvVJiJEXwJ.jpg);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+img {
+    padding-top: 1px;
+    padding-left: 25px;
+    height: 400px;
+    width: 500px;
+    background-attachment: fixed;
+}
+
+p {
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    width: 300px;
+    padding: 10px 100px;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal; 
+
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto; /* Убрать отступы по вертикали */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative; /* Позволяет использовать абсолютное позиционирование */
+    top: -550px; /* Поднять на 200 пикселей */
+    left: 1px; /* Сдвинуть вправо на 150 пикселей */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.photo {
+    margin: -55% 0 0 70%;
+}

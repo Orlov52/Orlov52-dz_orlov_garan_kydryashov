@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Церковный учёт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" src="tserkovnyiy-zvon-36968.mp3" loop hidden volume="100000"></audio>  
+    <header>
+        <h1>Церковный учёт приходящих</h1>
+    </header>
+    <main>
+        <div>
+            <p>Пример церковной записки</p>
+            <img src="Записки.jpg" alt="Записки">
+        </div>
+        <div class="form-container">
+            <h2>Анкета приходящего на службу</h2>
+            <form id="visitor-form" action="#" method="post">
+                <label for="name">ФИО раба божьего:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Голубиная почта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Дата прихода (не наркоманского):</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="comments">Послание богу:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+                <button type="submit">Помолится</button>
+            </form>
+        </div>
+        <div class="photo">
+            <img src="1897949.webp">
+        </div>
+    </main>
+
+    <script>
+        const form = document.getElementById('visitor-form');
+        const music = document.getElementById('background-music');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            music.play(); 
+            alert('Насладитесь симфонией!'); 
+        });
+    </script>
+</body>
+</html>
